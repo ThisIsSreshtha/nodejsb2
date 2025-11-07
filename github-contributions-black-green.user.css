@@ -1,0 +1,69 @@
+/*
+  GitHub — Pure Black Background + Green Contribution Graph
+  Paste this file into Stylus (or another userstyle manager) and enable it for github.com
+*/
+
+:root, html, body, .application-main, .page-responsive, .repository-content, .container-lg, .Layout {
+  background-color: #000 !important;
+  color: #d6dee7 !important;
+}
+
+/* Header, nav, footer */
+.header, .Header, header, .site-footer, .footer {
+  background-color: #000 !important;
+}
+
+/* Cards, panels, boxes */
+.Box, .Box-row, .discussion-item, .file, .markdown-body, .news, .BorderGrid {
+  background-color: #050505 !important;
+  color: #d6dee7 !important;
+}
+
+/* Contribution graph container */
+.js-yearly-contributions, .js-calendar-graph, .profile-yearly-contributions, .js-profile-editable-area {
+  background-color: #000 !important;
+}
+
+/* Contribution SVG background */
+.js-calendar-graph-svg, svg.js-calendar-graph-svg {
+  background-color: transparent !important;
+}
+
+/* Contribution squares by data-level (0..4) */
+svg.js-calendar-graph-svg rect[data-level="0"], rect.ContributionCalendar-day[data-level="0"] {
+  fill: #000 !important;           /* no contributions -> black */
+}
+svg.js-calendar-graph-svg rect[data-level="1"], rect.ContributionCalendar-day[data-level="1"] {
+  fill: #003300 !important;        /* lightest green */
+}
+svg.js-calendar-graph-svg rect[data-level="2"], rect.ContributionCalendar-day[data-level="2"] {
+  fill: #006600 !important;        /* medium green */
+}
+svg.js-calendar-graph-svg rect[data-level="3"], rect.ContributionCalendar-day[data-level="3"] {
+  fill: #00b300 !important;        /* bright green */
+}
+svg.js-calendar-graph-svg rect[data-level="4"], rect.ContributionCalendar-day[data-level="4"] {
+  fill: #00ff00 !important;        /* strongest/fully filled green */
+}
+
+/* Tooltip readability */
+.js-calendar-graph-tooltip, .Popover, .tooltipp {
+  background-color: #0a0a0a !important;
+  color: #e6edf3 !important;
+}
+
+/* Links and accents */
+a, .Link {
+  color: #58a6ff !important;
+}
+
+/* Code blocks and file listings */
+pre, code, .highlight, .file .blob-wrapper {
+  background-color: #000 !important;
+  color: #e6edf3 !important;
+}
+
+/* Ensure overlays and modals are readable */
+.modal-backdrop, .Popover, .SelectMenu-modal {
+  background-color: rgba(0,0,0,0.95) !important;
+}
